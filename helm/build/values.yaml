@@ -1,0 +1,15 @@
+app:
+  name: varodrig-poi-backend-app
+  namespace: varodrig
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/varodrig-backend
+  org: rosa916-rvhvd
+  name: varodrig-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: varodrig/poi-backend-app
+  tag: latest
